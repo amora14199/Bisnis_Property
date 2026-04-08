@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hubungi Kami - OS Property</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .hero-contact {
+            height: 70vh;
+            background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), 
+                        url('images/rumah10.jpeg') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+        .hero-contact h1 {
+            font-size: 4rem;
+            margin-bottom: 15px;
+            text-shadow: 0 4px 20px rgba(0,0,0,0.6);
+        }
+        .hero-contact p {
+            font-size: 1.5rem;
+        }
+
+        .contact-section {
+            padding: 80px 5%;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 2.8rem;
+            margin-bottom: 60px;
+            color: #222;
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 45px;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            font-size: 1.1rem;
+        }
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+        .contact-form button {
+            width: 100%;
+            padding: 18px;
+            font-size: 1.3rem;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .contact-form button:hover {
+            background: #0056b3;
+            transform: translateY(-3px);
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+        .info-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .info-card i {
+            font-size: 2.5rem;
+            color: #007bff;
+        }
+        .info-card h3 {
+            margin: 0;
+            color: #222;
+        }
+
+        @media (max-width: 768px) {
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+            .hero-contact h1 {
+                font-size: 2.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>OS Property</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+    </nav>
+</header>
+
+<!-- HERO CONTACT -->
+<section class="hero-contact">
+    <div>
+        <h1>Hubungi Kami</h1>
+        <p>Kami siap membantu mewujudkan rumah impian Anda</p>
+    </div>
+</section>
+
+<section class="contact-section">
+    <h2 class="section-title">Mari Berbicara</h2>
+    
+    <div class="contact-container">
+
+        <!-- FORMULIR KONTAK -->
+        <div class="contact-form">
+            <h3>Kirim Pesan Langsung</h3>
+            <form action="#" method="POST">
+                <input type="text" placeholder="Nama Lengkap" required>
+                <input type="email" placeholder="Email Anda" required>
+                <input type="tel" placeholder="Nomor WhatsApp" required>
+                <textarea rows="6" placeholder="Pesan Anda (contoh: ingin survey lokasi, tanya harga, dll)" required></textarea>
+                <button type="submit">Kirim Pesan ke OS Property</button>
+            </form>
+        </div>
+
+        <!-- INFO KONTAK -->
+        <div class="contact-info">
+
+            <div class="info-card">
+                <span style="font-size:3rem;">📱</span>
+                <div>
+                    <h3>WhatsApp</h3>
+                    <p><strong>0812-3456-7890</strong></p>
+                    <a href="https://wa.me/628123456789" target="_blank" class="btn" style="display:inline-block; margin-top:10px;">
+                        Chat WhatsApp Sekarang
+                    </a>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <span style="font-size:3rem;">📍</span>
+                <div>
+                    <h3>Alamat Kantor</h3>
+                    <p><strong>Gg. Saiyo No.7</strong><br>
+                       Pasar Ambacang, Kuranji<br>
+                       Padang City, West Sumatra 25152</p>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <span style="font-size:3rem;">✉️</span>
+                <div>
+                    <h3>Email</h3>
+                    <p><strong>info@osproperty.id</strong></p>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <span style="font-size:3rem;">🕒</span>
+                <div>
+                    <h3>Jam Operasional</h3>
+                    <p>Senin – Minggu : 08.00 – 17.00 WIB</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- GOOGLE MAPS -->
+<section class="contact-section" style="background:#f8f9fa; padding-bottom:100px;">
+    <h2 class="section-title">Lokasi Kami</h2>
+    <div style="max-width:1100px; margin:0 auto; border-radius:20px; overflow:hidden; box-shadow:0 15px 40px rgba(0,0,0,0.1);">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.8!2d100.3635!3d-0.9245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zR2cuIFNhaXlvIE5vLjc%2CIFBhc2FyIEFtYmFjYW5nLCBLdXJhbmppLCBQYWRhbmcgQ2l0eQ!5e0!3m2!1sid!2sid!4v1744101234567" 
+            width="100%" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 OS Property | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
