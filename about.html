@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami - OS Property</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .hero-about {
+            height: 70vh;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/rumah8.jpeg') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+        .hero-about h1 {
+            font-size: 4rem;
+            margin-bottom: 15px;
+            text-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+        .hero-about p {
+            font-size: 1.4rem;
+            max-width: 700px;
+        }
+
+        .about-section {
+            padding: 80px 5%;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            color: #222;
+        }
+        .about-text {
+            max-width: 900px;
+            margin: 0 auto;
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #444;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        .value-card {
+            background: white;
+            padding: 35px 25px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .value-card:hover {
+            transform: translateY(-10px);
+        }
+        .value-card h3 {
+            color: #007bff;
+            margin: 20px 0 15px;
+        }
+
+        .why-us {
+            background: #f8f9fa;
+        }
+        .why-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .why-item {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            width: 320px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.07);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>OS Property</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<!-- HERO ABOUT -->
+<section class="hero-about">
+    <div>
+        <h1>Tentang OS Property</h1>
+        <p>Mewujudkan rumah impian Anda dengan kepercayaan dan kualitas terbaik</p>
+    </div>
+</section>
+
+<!-- SIAPA KAMI -->
+<section class="about-section">
+    <h2 class="section-title">Siapa Kami?</h2>
+    <div class="about-text">
+        <p>
+            OS Property adalah perusahaan properti yang berdiri dengan komitmen untuk memberikan solusi hunian terbaik di Indonesia. 
+            Kami tidak hanya menjual rumah, tetapi juga mewujudkan mimpi keluarga Indonesia akan rumah yang nyaman, modern, dan berkualitas.
+        </p>
+        <p>
+            Dengan pengalaman di bidang pengembangan properti, kami hadirkan berbagai pilihan rumah 1 & 2 lantai, interior berkelas, 
+            serta lahan proyek siap bangun di lokasi strategis dengan pemandangan indah dan akses mudah.
+        </p>
+    </div>
+</section>
+
+<!-- VISI & MISI -->
+<section class="about-section" style="background:#f8f9fa;">
+    <div class="values-grid">
+        <div class="value-card">
+            <h3>Visi</h3>
+            <p>Menjadi perusahaan properti terpercaya yang membantu setiap keluarga Indonesia memiliki rumah impian yang berkualitas dan terjangkau.</p>
+        </div>
+        <div class="value-card">
+            <h3>Misi</h3>
+            <p>
+                • Memberikan properti berkualitas tinggi<br>
+                • Pelayanan cepat dan transparan<br>
+                • Lokasi strategis & lingkungan nyaman<br>
+                • Harga kompetitif dengan nilai terbaik
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- MENGAPA MEMILIH KAMI -->
+<section class="about-section why-us">
+    <h2 class="section-title">Mengapa Memilih OS Property?</h2>
+    <div class="why-list">
+        <div class="why-item">
+            <h3>✅ Desain Modern</h3>
+            <p>Rumah kami dirancang dengan konsep kekinian, minimalis, dan fungsional.</p>
+        </div>
+        <div class="why-item">
+            <h3>✅ Kualitas Terjamin</h3>
+            <p>Material terbaik dan pengerjaan rapi oleh tim profesional.</p>
+        </div>
+        <div class="why-item">
+            <h3>✅ Lokasi Strategis</h3>
+            <p>Dekat fasilitas umum, lingkungan asri, dan akses mudah.</p>
+        </div>
+        <div class="why-item">
+            <h3>✅ Harga Terjangkau</h3>
+            <p>Nilai properti yang jauh lebih baik dari harga yang ditawarkan.</p>
+        </div>
+        <div class="why-item">
+            <h3>✅ Pelayanan Personal</h3>
+            <p>Tim kami siap membantu dari survey hingga serah terima kunci.</p>
+        </div>
+    </div>
+</section>
+
+<!-- CALL TO ACTION -->
+<section class="about-section" style="text-align:center; background:linear-gradient(135deg, #007bff, #00c6ff); color:white;">
+    <h2 style="color:white;">Siap Mewujudkan Rumah Impian Anda?</h2>
+    <p style="font-size:1.3rem; margin:20px 0;">Hubungi kami sekarang dan dapatkan penawaran terbaik!</p>
+    <a href="https://wa.me/628123456789" target="_blank" class="btn" style="font-size:1.3rem; padding:18px 40px;">Chat WhatsApp Kami</a>
+</section>
+
+<footer>
+    <p>© 2026 OS Property | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
